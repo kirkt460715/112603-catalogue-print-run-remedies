@@ -1,0 +1,81 @@
+[
+  {
+    "id": "print-A",
+    "edition": "P1",
+    "stock": "ivory-90",
+    "binding": "stapled",
+    "parts": {
+      "text": "b2",
+      "plate": "k7"
+    }
+  },
+  {
+    "id": "print-B",
+    "edition": "P2",
+    "stock": "ivory-90",
+    "binding": "stapled",
+    "parts": {
+      "text": "c1",
+      "plate": "k7"
+    }
+  },
+  {
+    "id": "dispatch-2",
+    "from": "bindery",
+    "to": "shop-a",
+    "boxes": [
+      {
+        "box": "B1",
+        "count": 12,
+        "run": "print-A"
+      },
+      {
+        "box": "B2",
+        "count": 8,
+        "run": "print-B"
+      }
+    ],
+    "day": 4
+  },
+  {
+    "id": "check-B2",
+    "box": "B2",
+    "verified": [
+      {
+        "serial": "B2-1",
+        "text": "b2"
+      },
+      {
+        "serial": "B2-2",
+        "text": "b2"
+      },
+      {
+        "serial": "B2-3",
+        "text": "c1"
+      }
+    ],
+    "unchecked": 5,
+    "day": 6
+  },
+  {
+    "id": "return-2",
+    "id_of_dispatch": "dispatch-2",
+    "to": "depot",
+    "boxes": [
+      "B2"
+    ],
+    "status": "in_transit",
+    "day": 8
+  },
+  {
+    "id": "depot-scan",
+    "dispatch": "return-2",
+    "boxes": [
+      {
+        "box": "B2",
+        "received_count": 7
+      }
+    ],
+    "day": 9
+  }
+]

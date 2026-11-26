@@ -1,0 +1,40 @@
+[
+  {
+    "id": "shop-a",
+    "terms": "older_allowed_with_notice"
+  },
+  {
+    "id": "pre-13",
+    "accepts": "P2",
+    "allocations": [
+      "B2-1"
+    ],
+    "shipment": "dispatched",
+    "proof_of_delivery": null
+  },
+  {
+    "id": "pre-14",
+    "accepts": "P2",
+    "allocations": [
+      "B2-2"
+    ],
+    "shipment": "picked",
+    "proof_of_delivery": null
+  },
+  {
+    "id": "pre-15",
+    "accepts": "P1",
+    "allocations": [
+      "B1-4"
+    ],
+    "shipment": "delivered",
+    "day": 6
+  },
+  {
+    "id": "mail-13",
+    "order": "pre-13",
+    "kind": "supplement",
+    "receipt": "returned_undelivered",
+    "day": 10
+  }
+]

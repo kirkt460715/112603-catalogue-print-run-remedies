@@ -1,0 +1,49 @@
+[
+  {
+    "id": "proof-1",
+    "edition": "P1",
+    "parts": {
+      "cover": "a",
+      "text": "b2",
+      "plate": "k7"
+    },
+    "signature": "ed-27"
+  },
+  {
+    "id": "proof-2",
+    "edition": "P2",
+    "based_on": "P1",
+    "parts": {
+      "cover": "a",
+      "text": "c1",
+      "plate": "k7"
+    },
+    "allowed_change": [
+      "text"
+    ],
+    "signature": "ed-29"
+  },
+  {
+    "id": "bind-contract",
+    "formats": [
+      {
+        "part": "text",
+        "stock": "ivory-90",
+        "interval": [
+          17,
+          32
+        ],
+        "replaceable_if": "stapled"
+      },
+      {
+        "part": "plate",
+        "stock": "coated-170",
+        "interval": [
+          33,
+          40
+        ],
+        "replaceable_if": "unbound"
+      }
+    ]
+  }
+]
